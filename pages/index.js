@@ -29,6 +29,7 @@ const ClientsHeader = styled.div`
 const Clients = styled.ul`
   display: flex;
   margin: 0;
+  padding-left: 0;
 `;
 
 const Client = styled.li`
