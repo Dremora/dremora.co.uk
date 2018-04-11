@@ -17,7 +17,10 @@ export default class MyDocument extends Document {
     const styleTags = sheet.getStyleElement();
     return (
       <html>
-        <Head>{styleTags}</Head>
+        <Head>
+          {styleTags}
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
         <body className="custom_class">
           {this.props.customValue}
           {main}
