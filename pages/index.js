@@ -1,13 +1,4 @@
-import styled, { css, injectGlobal } from 'styled-components';
-
-injectGlobal`${css`
-  body {
-    font-family: Helvetica;
-    line-height: 1.3;
-    background-color: #ffca00;
-    margin: 0;
-  }
-`}`;
+import styled, { css } from 'styled-components';
 
 const Heading = styled.h1`
   font-size: 24px;
@@ -25,7 +16,9 @@ const Center = styled.div`
 
 const Subheading = styled.div``;
 
-const Clients = styled.ul``;
+const Clients = styled.ul`
+di
+`;
 const Client = styled.li``;
 
 export default () => (
