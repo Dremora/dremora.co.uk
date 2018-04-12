@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components';
 
 const Page = styled.div`
-  height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 `;
 
 const Heading = styled.h1`
