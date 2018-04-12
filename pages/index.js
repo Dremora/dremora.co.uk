@@ -118,7 +118,7 @@ export default () => (
           </Link>
         </Client>
         <Client>
-          <Link rel="noopener" target="_blank" href="https://www.eurostar.com/uk-en/?">
+          <Link rel="noopener" target="_blank" href="https://www.eurostar.com/">
             Eurostar
           </Link>
         </Client>
