@@ -2,10 +2,11 @@ import { css } from 'styled-components';
 
 export default css`
   body {
-    font-family: Helvetica;
+    font-family: Lato, sans-serif;
     line-height: 1.3;
-    background-color: #ce4848;
+    background: #e46000;
     margin: 0;
-    color: #222;
+    color: #ffe6e6;
+    font-weight: 900;
   }
 `;

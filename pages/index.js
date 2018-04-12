@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components';
 
 const Heading = styled.h1`
-  font-size: 36px;
+  font-size: 50px;
+  color: #ffe6e6;
   margin: 0;
+  text-transform: uppercase;
+  border-bottom: 3px solid #6b2d00;
+  font-weight: 900;
 `;
 
 const Center = styled.div`
@@ -15,53 +19,94 @@ const Center = styled.div`
 `;
 
 const Subheading = styled.div`
-  color: white;
-  font-weight: 300;
-  font-size: 12px;
+  color: #ffd0ae;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  padding-top: 11px;
 `;
 
 const ClientsHeader = styled.div`
   margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #fffaae;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 `;
 
 const Clients = styled.ul`
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding-left: 0;
+
+  @media (min-width: 450px) {
+    flex-direction: row;
+  }
 `;
 
 const Client = styled.li`
-  display: inline;
-  margin: 0 10px;
-  color: white;
-  font-weight: 300;
+  display: block;
+  margin: 5px 10px;
+  text-align: center;
 `;
 
-const GetInTouch = styled.a`
-  margin-top: 60px;
-  color: #222;
+const Link = styled.a`
+  color: #ffddc5;
+  font-weight: 700;
+  font-size: 18px;
+
+  &:hover {
+    color: #ffe6e6;
+  }
 `;
 
-const Highlight = styled.span`
-  background: #222;
-  color: #ce4848;
+const GetInTouch = styled.div`
+  margin-top: 30px;
+
+  @media (min-width: 450px) {
+    margin-top: 10px;
+  }
 `;
 
 export default () => (
   <Center>
-    <Heading>
-      <Highlight>D</Highlight>remora
-    </Heading>
+    <Heading>Dremora</Heading>
     <Subheading>Software consulting agency</Subheading>
-    <ClientsHeader>Prevously worked with</ClientsHeader>
+    <ClientsHeader>Clients</ClientsHeader>
     <Clients>
-      <Client>Ericsson</Client>
-      <Client>Indigo</Client>
-      <Client>Concrete</Client>
-      <Client>Kayako</Client>
+      <Client>
+        <Link rel="noopener" target="_blank" href="https://www.ericsson.com/">
+          Ericsson
+        </Link>
+      </Client>
+      <Client>
+        <Link rel="noopener" target="_blank" href="https://www.indigo.gt/">
+          Indigo
+        </Link>
+      </Client>
+      <Client>
+        <Link rel="noopener" target="_blank" href="https://www.concreteplatform.com/">
+          Concrete
+        </Link>
+      </Client>
+      <Client>
+        <Link rel="noopener" target="_blank" href="https://www.kayako.com/">
+          Kayako
+        </Link>
+      </Client>
+      <Client>
+        <Link rel="noopener" target="_blank" href="https://www.eurostar.com/uk-en/?">
+          Eurostar
+        </Link>
+      </Client>
     </Clients>
-    <GetInTouch href="mailto:kirill.korolyov@gmail.com">Get in touch</GetInTouch>
+    <GetInTouch>
+      <Link rel="noopener" target="_blank" href="mailto:kirill.korolyov@gmail.com">
+        Your business?
+      </Link>
+    </GetInTouch>
   </Center>
 );
