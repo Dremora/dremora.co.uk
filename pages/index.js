@@ -5,7 +5,6 @@ const Page = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
-  overflow: auto;
 `;
 
 const Heading = styled.h1`
