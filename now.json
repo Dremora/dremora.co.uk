@@ -2,5 +2,5 @@
   "version": 2,
   "name": "dremora.co.uk",
   "alias": "dremora.co.uk",
-  "builds": { "src": "package.json", "use": "@now/next" }
+  "builds": [{ "src": "package.json", "use": "@now/next" }]
 }
