@@ -5,9 +5,6 @@
     "react-dom": "^16.3.1",
     "styled-components": "^3.2.5"
   },
-  "now": {
-    "alias": "dremora.co.uk"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
